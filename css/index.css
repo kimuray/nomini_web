@@ -1,0 +1,29 @@
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 67px;
+  padding: 0 30px;
+}
+
+.header-nav-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+}
+
+.header-nav-menu-item {
+  margin: 0 15px 0 0;
+}
+
+.header-nav-menu-link {
+  text-decoration: none;
+  color: #484848;
+}
+
+.header-nav-menu-link:hover {
+  color: #484848;
+  text-decoration: underline;
+}
