@@ -67,3 +67,32 @@
   font-size: 1.25em;
   line-height: 3em;
 }
+
+.simulation-description {
+  margin-top: 20px;
+  font-size: .75em;
+}
+
+.simulation-table {
+  width: 80%;
+}
+
+.simulation-table td,th {
+  border-bottom: none;
+}
+
+.simulation-table th {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.simulation-table-result {
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.simulation-merit {
+  font-size: 1.25em;
+  font-weight: 500;
+}

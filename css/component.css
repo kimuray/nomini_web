@@ -3,7 +3,6 @@
   background-color: #fafafa;
 }
 
-
 /* button */
 .button-black {
   background: #000;
@@ -17,4 +16,9 @@
 /* text-decoration */
 .underline-orange {
   border-bottom: 1px solid #ea334c;
+}
+
+/* text align */
+.text-center {
+  text-align: center;
 }
