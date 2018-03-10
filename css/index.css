@@ -1,10 +1,14 @@
-
 .header-container {
+  width: 100%;
+  margin-top: 0;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 67px;
-  padding: 0 30px;
+  z-index: 10;
 }
 
 .header-nav-menu {
@@ -14,8 +18,30 @@
   margin: 0;
 }
 
+#mobile-global-nav {
+  display: none;
+  position: absolute;
+  top: 67px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
 .header-nav-menu-item {
   margin: 0 15px 0 0;
+}
+
+.header-nav-menu-mobile {
+  width: 100%;
+  list-style: none;
+}
+
+.header-nav-menu-item-mobile {
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #484848;
 }
 
 .header-nav-menu-link {
@@ -135,4 +161,78 @@
   color: #fff;
   text-decoration: none;
   opacity: 0.8;
+}
+
+
+/* js関連スタイル */
+
+#nav-toggle {
+  display: none;
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  width: 34px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+#nav-toggle div {
+  position: relative;
+}
+
+#nav-toggle span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #666;
+  left: 0;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+  top: 0;
+}
+#nav-toggle span:nth-child(2) {
+  top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+  top: 22px;
+}
+
+/* メディアクエリ */
+
+@media screen and (max-width: 640px) {
+  #nav-toggle {
+    display: block;
+  }
+
+  #global-nav {
+    display: none;
+  }
+
+  #mobile-global-nav.open {
+    display: block;
+  }
+
+  /* #nav-toggle 切り替えアニメーション */
+  #nav-toggle.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+  #nav-toggle.open span:nth-child(2) {
+    width: 0;
+    left: 50%;
+  }
+  #nav-toggle.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-315deg);
+    -moz-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+  }
 }
