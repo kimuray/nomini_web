@@ -1,14 +1,17 @@
-.header-container {
+.header {
   width: 100%;
   margin-top: 0;
   top: 0;
   position: fixed;
+  z-index: 10;
+}
+
+.header-container {
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 67px;
-  z-index: 10;
 }
 
 .header-nav-menu {
@@ -133,12 +136,12 @@
   list-style: none;
 }
 
-.footer-links-item {
+.footer-links-link {
   color: #484848;
   text-decoration: none;
 }
 
-.footer-links-item:hover {
+.footer-links-link:hover {
   color: #484848;
   text-decoration: underline;
 }
@@ -234,5 +237,18 @@
     -webkit-transform: rotate(-315deg);
     -moz-transform: rotate(-315deg);
     transform: rotate(-315deg);
+  }
+
+  .simulation-table {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .footer-links {
+    display: block;
+  }
+
+  .footer-links-item {
+    width: 100%;
   }
 }

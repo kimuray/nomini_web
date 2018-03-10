@@ -18,7 +18,11 @@
   border-bottom: 1px solid #ea334c;
 }
 
-/* text align */
+/* text */
 .text-center {
   text-align: center;
+}
+
+.text-contrast {
+  font-size: 1.25em;
 }
