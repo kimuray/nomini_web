@@ -26,3 +26,8 @@
 .text-contrast {
   font-size: 1.25em;
 }
+
+/* margin */
+mb-30 {
+  margin-bottom: 30px;
+}

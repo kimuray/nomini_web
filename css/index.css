@@ -166,6 +166,23 @@
   opacity: 0.8;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 430px;
+  margin-top: 40px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-image {
+  height: 430px;
+  width: 100%;
+}
+
 
 /* js関連スタイル */
 
@@ -249,6 +266,16 @@
   }
 
   .footer-links-item {
+    width: 100%;
+  }
+
+  .swiper-container {
+    width: 300px;
+    height: 215px;
+    margin-top: 40px;
+  }
+  .slider-image {
+    height: 215px;
     width: 100%;
   }
 }
