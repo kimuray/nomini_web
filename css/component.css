@@ -27,6 +27,15 @@
   font-size: 1.25em;
 }
 
+.text-small {
+  font-size: .75em;
+}
+
+/* marker */
+.marker-yellow {
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
 /* margin */
 mb-30 {
   margin-bottom: 30px;
