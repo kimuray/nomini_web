@@ -74,6 +74,11 @@
   font-size: 1.5em;
 }
 
+.top-content-sub-message {
+  margin-top: 30px;
+  font-size: 1.25em;
+}
+
 .section {
   padding: 80px 0 50px 0;
 }
@@ -85,6 +90,15 @@
 
 .section-content {
   margin-bottom: 50px;
+}
+
+.section-icon-area {
+  margin-bottom: 20px;
+}
+
+.section-icon-area img {
+  width: 80px;
+  height: 80px;
 }
 
 .section-content-heading {
