@@ -302,6 +302,18 @@
 /* メディアクエリ */
 
 @media screen and (max-width: 640px) {
+  .top {
+    padding: 200px 0;
+    background: linear-gradient(-90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, .4) 50%,
+      rgba(255, 255, 255, .8)),
+      url("../images/nomini_top_smp.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
   #nav-toggle {
     display: block;
   }
@@ -333,7 +345,7 @@
   }
 
   .simulation-table {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 20px auto;
   }
 
@@ -353,5 +365,8 @@
   .slider-image {
     height: 215px;
     width: 100%;
+  }
+  .simulation-table-result {
+    font-size: 1em;
   }
 }
