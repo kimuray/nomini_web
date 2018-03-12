@@ -311,7 +311,7 @@
       url("../images/nomini_top_smp.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   #nav-toggle {
