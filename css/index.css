@@ -14,6 +14,10 @@
   height: 67px;
 }
 
+.header-bland img {
+  height: 67px;
+}
+
 .header-nav-menu {
   display: flex;
   justify-content: space-around;
