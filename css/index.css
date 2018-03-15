@@ -15,7 +15,8 @@
 }
 
 .header-bland img {
-  height: 67px;
+  width: 150px;
+  height: 40px;
 }
 
 .header-nav-menu {
@@ -71,6 +72,11 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+}
+
+.top-white {
+  padding: 200px 0;
+  background: #fff;
 }
 
 .top-content-message {
