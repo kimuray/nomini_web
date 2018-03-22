@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: echo 'test'
+  deploy:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: sudo apt-get install python2.7-dev
+      - run: curl -kL https://bootstrap.pypa.io/get-pip.py | sudo python
+      - run: sudo pip install awscli
+      - run: sh script/deploy.sh
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
