@@ -309,6 +309,10 @@
   top: 22px;
 }
 
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: black;
+}
+
 /* メディアクエリ */
 
 @media screen and (max-width: 640px) {
